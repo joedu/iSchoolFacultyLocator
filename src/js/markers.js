@@ -1,13 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Google Maps AJAX + MySQL/PHP Example</title>
-    <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxTPZYElJSBeBUeMSX5xXgq6lLjHthSAk20WnZ_iuuzhMt60X_ukms-AUg"
-            type="text/javascript"></script>
-
-    <script type="text/javascript">
     //<![CDATA[
 
     var iconBlue = new GIcon(); 
@@ -64,11 +54,3 @@
       return marker;
     }
     //]]>
-  </script>
-
-  </head>
-
-  <body onload="load()" onunload="GUnload()">
-    <div id="map" style="width: 110 0px; height: 300px"></div>
-  </body>
-</html>

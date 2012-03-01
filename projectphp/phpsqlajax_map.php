@@ -69,6 +69,6 @@
   </head>
 
   <body onload="load()" onunload="GUnload()">
-    <div id="map" style="width: 110 0px; height: 500px"></div>
+    <div id="map" style="width: 750px; height: 500px"></div>
   </body>
 </html>

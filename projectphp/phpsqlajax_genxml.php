@@ -1,5 +1,9 @@
 <?php
-require("phpsqlajax_dbinfo.php");
+
+$host = "localhost";
+$username="root";
+$password="";
+$database="project";
 
 function parseToXML($htmlStr) 
 { 

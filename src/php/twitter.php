@@ -1,10 +1,8 @@
 <?php session_start();
-
 include 'src/lib/EpiCurl.php';
 include 'src/lib/EpiOAuth.php';
 include 'src/lib/EpiTwitter.php';
 include 'src/lib/secret.php';
-
 $twitterObj = new EpiTwitter($consumer_key, $consumer_secret);
 $oauth_token = $_GET['oauth_token'];
 	if($oauth_token == '')
