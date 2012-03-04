@@ -96,12 +96,17 @@
 </head>
 
 <body onload="load()" onunload="GUnload()">
+<script>function clearText(field){if (field.defaultValue == field.value) field.value = ''; else if (field.value == '') field.value = field.defaultValue;}</script>
 	<div id="contain">
 		<div id="header">test </div><!--/header-->
 		<div id="left" style="margin-top:5px;">
 			<div id="map" style="width: 730px; height: 300px"></div>
 		</div><!--/left-->
 		<div id="right" style="margin-top:5px;">
+		<form name="form" action="src/php/search.php" method="get">
+		  <input type="text" name="q" value="Search Professor" onfocus="clearText(this)" />
+		  <input type="submit" name="Submit" value="Search" />
+		</form>
 		<h2 class="title">Twitter Login</h2>
 		<?php 
 
