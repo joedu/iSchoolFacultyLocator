@@ -27,7 +27,7 @@ if (!$result) {
 
 // Initialize delay in geocode speed
 $delay = 0;
-$base_url = "http://" . MAPS_HOST . "/maps/geo?output=xml" . "&key=" . $apiKeyS;
+$base_url = "http://" . MAPS_HOST . "/maps/geo?output=xml" . "&key=" . $apiKeyC;
 
 // Iterate through the rows, geocoding each address
 while ($row = @mysql_fetch_assoc($result)) {
