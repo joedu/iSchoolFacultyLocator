@@ -1,8 +1,7 @@
 <?php
 
-	$apiKey = 'AIzaSyB25MaHeCsfwRf8I-5l77IR0G-K-NR9MLU';
-	
-	#echo $apiKey;
+	$apiKeyC = 'AIzaSyAaOtPkOlgUvybR86W8GbRtnGYc1rE8b-M';
+	$apiKeyS = 'AIzaSyB25MaHeCsfwRf8I-5l77IR0G-K-NR9MLU';
 
    require 'config.php';
 
@@ -35,7 +34,7 @@
 <head>
 	<title>iSchool Faculty Locator - Home</title>
 	<link rel="stylesheet" href="style.css" />
-    <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo $apiKey; ?>"
+    <script src="http://maps.google.com/maps?file=api&v=3&key=<?php echo $apiKeyS; ?>"
             type="text/javascript"></script>
             
     <script type="text/javascript">
