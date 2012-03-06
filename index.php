@@ -34,7 +34,7 @@
 <head>
 	<title>iSchool Faculty Locator - Home</title>
 	<link rel="stylesheet" href="style.css" />
-    <script src="http://maps.google.com/maps?file=api&v=3&key=<?php echo $apiKeyS; ?>"
+    <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo $apiKeyS; ?>"
             type="text/javascript"></script>
             
     <script type="text/javascript">

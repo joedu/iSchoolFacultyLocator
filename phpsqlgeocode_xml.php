@@ -1,5 +1,7 @@
 <?php
 require("dbinfo.php");
+	$apiKeyC = 'AIzaSyAaOtPkOlgUvybR86W8GbRtnGYc1rE8b-M';
+	$apiKeyS = 'AIzaSyB25MaHeCsfwRf8I-5l77IR0G-K-NR9MLU';
 
 define("MAPS_HOST", "maps.google.com");
 define("KEY", "AIzaSyAaOtPkOlgUvybR86W8GbRtnGYc1rE8b-M");
@@ -25,7 +27,7 @@ if (!$result) {
 
 // Initialize delay in geocode speed
 $delay = 0;
-$base_url = "http://" . MAPS_HOST . "/maps/geo?output=xml" . "&key=" . KEY;
+$base_url = "http://" . MAPS_HOST . "/maps/geo?output=xml" . "&key=" . $apiKeyS;
 
 // Iterate through the rows, geocoding each address
 while ($row = @mysql_fetch_assoc($result)) {
