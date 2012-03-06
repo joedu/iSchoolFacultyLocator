@@ -28,6 +28,8 @@ mysql_connect("localhost","root",""); //(host, username, password)
 //specify database ** EDIT REQUIRED HERE **
 mysql_select_db("project") or die("Unable to select database"); //select which database we're using
 
+$var2 = @$_GET['profID'] ;
+
 // Build SQL Query  
 $query = "select * from professor where profFName OR profLName like \"%$trimmed%\"  
   order by profLName"; // EDIT HERE and specify your table and field names for the SQL query
