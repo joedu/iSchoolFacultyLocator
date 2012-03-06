@@ -2,7 +2,7 @@
 require("dbinfo.php");
 
 define("MAPS_HOST", "maps.google.com");
-define("KEY", "AIzaSyCf-2DKyjte22hT-17ukpV_rotJfvQecvY");
+define("KEY", "AIzaSyAaOtPkOlgUvybR86W8GbRtnGYc1rE8b-M");
 
 // Opens a connection to a MySQL server
 $connection = mysql_connect("localhost", $username, $password);
