@@ -1,8 +1,5 @@
 <?php
 
-	$apiKeyC = 'AIzaSyAaOtPkOlgUvybR86W8GbRtnGYc1rE8b-M';
-	$apiKeyS = 'AIzaSyB25MaHeCsfwRf8I-5l77IR0G-K-NR9MLU';
-
    require 'config.php';
 
    $session = $facebook->getSession();
@@ -34,7 +31,7 @@
 <head>
 	<title>iSchool Faculty Locator - Home</title>
 	<link rel="stylesheet" href="style.css" />
-    <script src="http://maps.google.com/maps?file=api&v=2&key=<?php echo $apiKeyC; ?>"
+    <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAjU0EJWnWPMv7oQ-jjS7dYxTPZYElJSBeBUeMSX5xXgq6lLjHthSAk20WnZ_iuuzhMt60X_ukms-AUg"
             type="text/javascript"></script>
             
     <script type="text/javascript">
@@ -104,6 +101,7 @@
 		<div id="header">test </div><!--/header-->
 		<div id="left" style="margin-top:5px;">
 			<div id="map" style="width: 730px; height: 300px"></div>
+                        <a href="addEvent.php"><img src="formbutton.gif"></a>
 		</div><!--/left-->
 		<div id="right" style="margin-top:5px;">
 		<form name="form" action="src/php/search.php" method="get">
