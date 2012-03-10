@@ -104,6 +104,7 @@
 		<div id="header">test </div><!--/header-->
 		<div id="left" style="margin-top:5px;">
 			<div id="map" style="width: 730px; height: 300px"></div>
+                        <a href="addEvent.php"><img src="formbutton.gif"></a>
 		</div><!--/left-->
 		<div id="right" style="margin-top:5px;">
 		<form name="form" action="src/php/search.php" method="get">
