@@ -47,7 +47,7 @@ if (isset($_POST['username'])) {
   $password=$_POST['password'];
   $MM_fldUserAuthorization = "";
   $MM_redirectLoginSuccess = "http://68.81.93.94/ischoolfacultylocator/index.php";
-  $MM_redirectLoginFailed = "http://68.81.93.94/ischoolfacultylocator/hn-sitelogin/accessdenied";
+  $MM_redirectLoginFailed = "http://68.81.93.94/ischoolfacultylocator/hn-sitelogin/accessdenied.html";
   $MM_redirecttoReferrer = false;
   mysql_select_db($database_username, $username);
   

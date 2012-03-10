@@ -1,6 +1,6 @@
 <?
 $host = "localhost";
-$username="root";
-$password="";
-$database="project";
+$username="admin";
+$password="Ch4ng3m3";
+$database="ischoolfacultylocatorsqlW12";
 ?>
