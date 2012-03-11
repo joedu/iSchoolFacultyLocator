@@ -37,7 +37,7 @@ if (!isset($var))
   }
 
 //connect to your database ** EDIT REQUIRED HERE **
-mysql_connect("localhost","root","Pr0tect0r#1"); //(host, username, password)
+mysql_connect("localhost","root",""); //(host, username, password)
 
 //specify database ** EDIT REQUIRED HERE **
 mysql_select_db("project") or die("Unable to select database"); //select which database we're using
