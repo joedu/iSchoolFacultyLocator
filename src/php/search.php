@@ -1,4 +1,18 @@
-<?php
+
+<html>
+<head>
+	<title>iSchool Faculty Locator - Home</title>
+	<link rel="stylesheet" href="../../style.css" />
+</head>
+<body id="main_body" >
+
+    <div id="form_container">
+         <a href="../../index.php"><img src="../../banner.jpg" alt=""></a>
+            <br />
+			<center><h2>iSchool Faculty Locator Search Results</h2></center>
+			<center><h3>Detailed information about your search below.</h3></center>
+        <h1>Add Faculty Travel Information</h1> 
+        <?php
 
   // Get the search variable from URL
 
@@ -23,12 +37,10 @@ if (!isset($var))
   }
 
 //connect to your database ** EDIT REQUIRED HERE **
-mysql_connect("localhost","admin","Ch4ng3m3"); //(host, username, password)
+mysql_connect("localhost","root",""); //(host, username, password)
 
 //specify database ** EDIT REQUIRED HERE **
 mysql_select_db("project") or die("Unable to select database"); //select which database we're using
-
-$var2 = @$_GET['profID'] ;
 
 // Build SQL Query  
 $query = "select * from professor where profFName OR profLName like \"%$trimmed%\"  
@@ -37,11 +49,13 @@ $query = "select * from professor where profFName OR profLName like \"%$trimmed%
  $numresults=mysql_query($query);
  $numrows=mysql_num_rows($numresults);
 
+ 
+
 // If we have no results, offer a google search as an alternative
 
 if ($numrows == 0)
   {
-  echo "<h2>Results</h2>";
+  //echo "<h2>Results</h2>";
   echo "<p>Sorry, your search: &quot;" . $trimmed . "&quot; returned zero results</p>";
 
 // google
@@ -61,10 +75,10 @@ if ($numrows == 0)
   $result = mysql_query($query) or die("Couldn't execute query");
 
 // display what the person searched for
-echo "<p>You searched for: &quot;" . $var . "&quot;</p>";
+//echo "<p>You searched for: &quot;" . $var . "&quot;</p>";
 
 // begin to show results set
-echo "<h2>Results</h2><br>";
+//echo "<h2>Results</h2><br>";
 #$count = 1 + $s ;
 
 // now you can display the results returned
@@ -108,15 +122,19 @@ $currPage = (($s/$limit) + 1);
   // not last page so give NEXT link
   $news=$s+$limit;
 
-  echo "&nbsp;<a href=\"$PHP_SELF?s=$news&q=$var\">Next 10 &gt;&gt;</a>";
+  //echo "&nbsp;<a href=\"$PHP_SELF?s=$news&q=$var\">Next 10 &gt;&gt;</a>";
   }
 
 $a = $s + ($limit) ;
   if ($a > $numrows) { $a = $numrows ; }
   $b = $s + 1 ;
-  echo "<p>Showing results $b to $a of $numrows<br><br><a href='../index.php'>Go Back</a></p>";
+  //echo "<p>Showing results $b to $a of $numrows<br><br><a href='../index.php'>Go Back</a></p>";
+  echo "<a href='../../index.php'>Go Back</a>";
  #echo 'First Name: '.$row["profFName"];'Last Name: '.$row["profLName"];'First Name: '.$row["profTitle"];
   
   
   
 ?>
+    </div>
+</body>
+</html>
