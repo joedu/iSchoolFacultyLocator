@@ -1,0 +1,122 @@
+body
+{
+
+background-image:url('images/bg.png');
+background-repeat:repeat;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+#header {
+ 
+    float: center;
+    width: 1024px;
+	height: 170px;
+	background-attachment: ;
+	background-image:url("images/header.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 1px solid Black;
+
+    
+}
+#navigation {
+    border: 1px solid Black;
+
+    width: 1024px;
+    height: 43px;
+background-image: url('images/black.png');
+background-attachment: fixed;
+
+background-position: center center;
+background-repeat: no-repeat;
+margin: 2px;
+
+}
+
+
+
+
+
+#home { 
+float: left;
+width : 205px; 
+height : 43px; 
+background-image : url('images/home1.png'); 
+display: block;
+}
+#home:hover { 
+float: left;
+width : 205px; 
+height : 43px;
+background-image : url('images/home2.png'); 
+display: block;
+}
+#faculty { 
+float: left;
+width : 205px; 
+height : 43px; 
+background-image : url('images/faculty1.png'); 
+display: block;
+}
+#faculty:hover { 
+float: left;
+width : 205px; 
+height : 43px;
+background-image : url('images/faculty2.png'); 
+display: block;
+}
+#map2 { 
+float: left;
+width : 205px; 
+height : 43px; 
+background-image : url('images/map1.png'); 
+display: block;
+}
+#map2:hover { 
+float: left;
+width : 205px; 
+height : 43px;
+background-image : url('images/map2.png'); 
+display: block;
+}#checkin { 
+float: left;
+width : 205px; 
+height : 43px; 
+background-image : url('images/checkin1.png'); 
+display: block;
+}
+#checkin:hover { 
+float: left;
+width : 205px; 
+height : 43px;
+background-image : url('images/checkin2.png'); 
+display: block;
+}
+
+
+#content {
+    border: 1px solid Black;
+
+    width: 1024px;
+    height: 2000px;
+
+background-attachment: ;
+background-image: url('images/black.png');
+background-position: center center;
+background-repeat: no-repeat;
+	
+}
+
+#footer {
+    border: 0px solid White;
+    float: center;
+    width: 100%;
+    z-index: 0;
+background-attachment: fixed;
+background-image: url('/images/footer.png');
+background-position: center center;
+background-repeat: no-repeat;
+}
